@@ -168,7 +168,7 @@ LUAMOD_API int luaopen_compat53_string (lua_State *L) {
  */
 #  undef LUAMOD_API
 #  if defined(__GNUC__) || __has_attribute(__unused__)
-#    define LUAMOD_API __attribute__((__unused__, visibility("default"))) static
+#    define LUAMOD_API __attribute__((__unused__)) static
 #  else
 #    define LUAMOD_API static
 #  endif
@@ -277,7 +277,7 @@ LUAMOD_API int luaopen_compat53_io (lua_State *L) {
  */
 #  undef LUAMOD_API
 #  if defined(__GNUC__) || __has_attribute(__unused__)
-#    define LUAMOD_API __attribute__((__unused__, visibility("default"))) static
+#    define LUAMOD_API __attribute__((__unused__)) static
 #  else
 #    define LUAMOD_API static
 #  endif
